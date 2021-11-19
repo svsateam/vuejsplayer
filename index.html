@@ -38,14 +38,14 @@ new Vue({
         playerOptions: {
           height: '360',
           autoplay: true,
-          muted: true,
+          muted: false,
           language: 'en',
           playbackRates: [0.7, 1.0, 1.5, 2.0],
           sources: [{
             type: "video/mp4",
             // mp4
            // src: "http://vjs.zencdn.net/v/oceans.mp4",
-            src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+            src: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
             // webm
             // src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
           }],
@@ -57,7 +57,7 @@ new Vue({
       // console.log('this is current player instance object', this.player)
       setTimeout(() => {
         console.log('dynamic change options', this.player)
-        this.player.muted(false)
+       // this.player.muted(false)
       }, 2000)
     },
     computed: {
